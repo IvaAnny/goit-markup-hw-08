@@ -58,8 +58,8 @@ nav {
   @extend %alighn-lsst
 }
 .menu-list {
-  @extend %alighn-lsst
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  @extend %alighn-lsst 
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);}
 }
 .lin {
   color: var(--logo-color);

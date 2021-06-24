@@ -1,3 +1,5 @@
+
+
 /*utils*/
 :root {
   --logo-color: #2196f3;
@@ -629,12 +631,41 @@ nav {
 .title-section {
   max-width: 1600px;
   margin: 0 auto;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bacimg.jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/mobilebgim.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
+@media (min-device-pixel-ratio: 2) and (max-width: 767px),
+  (min-resolution: 192dpi) and (max-width: 767px),
+  (min-resolution: 2dppx) and (max-width: 767px){
+  .box {
+    background-image: url('../images/mobilebgim@2x.jpg');
+  }
 
+  @media screen and (min-width: 767px) {
+  .box {
+    background-image: url('../images/tabletbgim.jpg');
+  }
+
+  @media (min-device-pixel-ratio: 2) and (min-width: 767px),
+  (min-resolution: 192dpi) and (min-width: 767px),
+  (min-resolution: 2dppx) and (min-width: 767px){
+  .box {
+    background-image: url('../images/tabletbgim@2x.jpg');
+  }
+
+  @media screen and (min-width: 1200px) {
+    .box {
+      background-image: url('../images/bgImg.jpg');
+    }
+  
+    @media (min-device-pixel-ratio: 2) and (min-width: 1200px),
+    (min-resolution: 192dpi) and (min-width: 1200px),
+    (min-resolution: 2dppx) and (min-width: 1200px){
+    .box {
+      background-image: url('../images/bgImg@2x.jpg');
+    }
 .title-list {
   margin-bottom: 30px;
   font-weight: 900;
@@ -1015,4 +1046,4 @@ nav {
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
-/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=main.css.map */ 
