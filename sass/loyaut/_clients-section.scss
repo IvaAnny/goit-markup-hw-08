@@ -1,0 +1,42 @@
+
+.clients-icon {
+    fill: #afb1b8;
+    transition:  fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .clients-section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+  
+  .clients {
+    @extend %flex-list
+    margin-top: 50px;
+  }
+ 
+  
+  .client-link {
+    @extend %flex-list
+    align-items: center;
+    width: 170px;
+    height: 92px;
+  }
+  .clients-list {
+    border: 1px solid #afb1b8;
+    @extend %flex-list
+    align-items: center;
+    width: 170px;
+    height: 92px;
+    transition: border-color 250ms linear  ;
+
+    &:hover {
+      border-color: #2196f3;
+    }
+    &:hover .clients-icon {
+      fill: #2196f3;
+    }
+  }
+  
+  .clients-list:not(:last-child) {
+    margin-right: 30px;
+  }

@@ -1,0 +1,132 @@
+
+
+  
+  .contact-details {
+    background: var(--title-sektion-color);
+
+    .footer-conteiner {
+      align-items: baseline;
+      display: flex;
+    }
+    .footer-dive {
+      margin-right: 70px;
+    }
+  }
+  .log-studio {
+    color: var(--adress-color);
+    font-weight: 700px;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+  }
+  
+  .menu-list-footer {
+    font-weight: 400px;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    transition: color 250ms, cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover &:focus {
+      color: var(--logo-color);
+    }
+  }
+  .google-adres {
+    color: var(--adress-color);
+  }
+  .conakt-adres {
+    color: var(--conact-color);
+  }
+  
+  .link-footer {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+  .conakt-adres:not(:last-child) {
+    margin-bottom: 9px;
+  }
+  .google-adres {
+    margin-bottom: 9px;
+  }
+  
+  .mini-list-footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  .mini-link-footer:not(:last-child) {
+    margin-right: 10px;
+  }
+  .mini-link-footer {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+   @extend %flex-list
+    align-items: center;
+    background: rgba(255, 255, 255, 0.1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+  &:focus {
+    background-color: #2196f3;
+  }
+  }
+  
+  .icon-footer {
+    width: 20px;
+    height: 20px;
+    fill: #ffffff;
+    
+  }
+ 
+  
+ 
+  
+  
+  .footer-dive-form{
+    .subscription{
+      margin-bottom: 20px;
+      font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    }
+    .footer-fom{
+      margin-left: 93px;
+     }
+
+    .footer-label{
+      display: flex;
+      align-items: center;
+    }
+    .footer-submit-button{
+      width: 200px;
+    height: 50px;
+    background: #2196F3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    color: #ffffff;
+    border: none;
+    padding-top: 10px;
+    padding-right: 30px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    }
+    .client-mail{
+      padding-left: 16px;
+      width: 358px;
+    height: 50px;
+    outline: none;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background: #2F303A;
+    color: #ffffff;
+    margin-right: 12px;
+    }
+  }

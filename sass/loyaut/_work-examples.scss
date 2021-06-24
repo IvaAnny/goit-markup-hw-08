@@ -1,0 +1,38 @@
+.section-work-examples {
+  padding-bottom: 94px;
+
+  .box-list {
+    margin-left: 30px;
+    margin-top: 30px;
+    position: relative;
+  }
+
+  .item-list-description {
+    display: flex;
+    margin-top: -30px;
+    margin-left: -30px;
+  }
+  .work-examples-text{
+    width: 370px;
+  height: 70px;
+  background: rgba(47, 48, 58, 0.8);
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  color: #ffffff;
+  padding-top: 27px;
+  padding-right: 82px;
+  padding-bottom: 27px;
+  padding-left: 82px;
+  
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  }
+}
+
+
+
