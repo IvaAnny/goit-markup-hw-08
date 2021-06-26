@@ -10,20 +10,21 @@
   }
   
   .clients {
-    @extend %flex-list
-    margin-top: 50px;
+    @extend %flex-list;
+     margin-top: 50px;
+   
   }
  
   
   .client-link {
-    @extend %flex-list
+    @extend %flex-list;
     align-items: center;
     width: 170px;
     height: 92px;
   }
   .clients-list {
     border: 1px solid #afb1b8;
-    @extend %flex-list
+    @extend %flex-list;
     align-items: center;
     width: 170px;
     height: 92px;
