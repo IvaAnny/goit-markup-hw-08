@@ -21,6 +21,7 @@ bottom: 0;
 
 
 .header {
+  
   border-bottom: 1px solid #ececec;
 }
 .nav-link {
@@ -31,7 +32,7 @@ bottom: 0;
   padding-top: 10px;
   padding-bottom: 10px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  @extend %alighn-lsst
+  @extend  %alighn-list;
 }
 .men .menu-item:not(:last-child) {
   margin-right: 50px;
@@ -52,13 +53,13 @@ bottom: 0;
 .header .conteiner {
   min-height: 80px;
   justify-content: space-between;
-  @extend %alighn-lsst
+  @extend  %alighn-list;
 }
 nav {
-  @extend %alighn-lsst
+  @extend  %alighn-list;
 }
 .menu-list {
-  @extend %alighn-lsst ;
+  @extend  %alighn-list ;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .lin {

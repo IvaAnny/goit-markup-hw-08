@@ -1,15 +1,16 @@
+.hidden-header {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
 
-.item-list-g::before {
-  display: block;
-  content: "";
-  height: 120px;
-  width: 270px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: #f5f4fa;
-  margin-bottom: 30px;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
-
 .Group::before {
   background-image: url(../images/Group.svg);
 }
@@ -22,6 +23,18 @@
 .astronaut::before {
   background-image: url(../images/astronaut.svg);
 }
+
+.item-list-g::before {
+  display: block;
+  content: "";
+  height: 120px;
+  width: 270px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #f5f4fa;
+  margin-bottom: 30px;
+}
+/*
 
 .description-section {
   
@@ -41,20 +54,6 @@
 .item-description .item-list {
   width: 270px;
 }
-
-.hidden-header {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
 .list {
   margin-right: 30px;
-}
+} */
