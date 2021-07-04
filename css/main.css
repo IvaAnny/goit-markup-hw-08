@@ -1069,4 +1069,10 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
+
+@media screen and (max-width: 1100px) {
+  .section-work-examples {
+    display: none;
+  }
+}
 /*# sourceMappingURL=main.css.map */
