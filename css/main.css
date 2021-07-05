@@ -372,6 +372,21 @@ body {
 }
 
 /*loyaut*/
+.header-modal-button {
+  width: 40px;
+  height: 40px;
+  padding-top: 12px;
+  padding-right: 8px;
+  padding-bottom: 12px;
+  padding-left: 8px;
+  background: black;
+}
+
+.icon-modal-button {
+  width: 24px;
+  height: 16px;
+}
+
 .li {
   position: relative;
 }
@@ -894,13 +909,28 @@ body {
   padding-bottom: 60px;
 }
 
+.etem-list {
+  margin-top: 30px;
+}
+
 @media screen and (min-width: 768px) {
   .team-description {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .etem-list:not(:last-child) {
+    margin-right: 30px;
+  }
+  .etem-list {
+    flex-basis: calc((100% - 60px) / 2);
   }
 }
 
 @media screen and (min-width: 1200px) {
+  .etem-list {
+    flex-basis: calc((100% - 120px) / 4);
+  }
   .team-section {
     padding-top: 94px;
     padding-bottom: 94px;
@@ -927,14 +957,6 @@ body {
 
 .categories {
   margin-bottom: 10px;
-}
-
-.etem-list {
-  width: 100%;
-  flex-basis: calc((100%-120px) / 4);
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-  margin-top: 30px;
-  margin-left: 30px;
 }
 
 .team-li {
