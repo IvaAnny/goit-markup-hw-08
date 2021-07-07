@@ -120,6 +120,7 @@ body {
   background-color: #ffff;
   z-index: 1000;
   transform: translateX(100%);
+  transition: 250ms ease-in-out;
 }
 
 .close-icon {
