@@ -3,11 +3,18 @@
     top: 0;
     left: 0;
     width: 100vw;
-    height: 100hv;
+    height: 100vh;
+    max-width: 767px;
     background-color: #ffff;
     z-index: 1000;
     transform: translateX(100%);
-    transition: 250ms ease-in-out
+    transition: 250ms ease-in-out;
+    display: flex;
+    flex-direction: column;
+    padding: 48px 48px;
+    &.is-open{
+        transform: translateX(0);
+    }
 }
 
 
