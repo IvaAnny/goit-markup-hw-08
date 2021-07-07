@@ -112,14 +112,14 @@ body {
 
 /*components*/
 .modal-header {
-  position: absolute;
-  background-color: #ffff;
-}
-
-.mob-form {
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100vw;
-  height: 100vh;
-  margin: 0 auto;
+  height: 100hv;
+  background-color: #ffff;
+  z-index: 1000;
+  transform: translateX(100%);
 }
 
 .close-icon {
@@ -138,8 +138,8 @@ body {
   fill: #2196F3;
 }
 
-.modal-header {
-  display: flex;
+.modal-header .is-open {
+  transform: translateX(0);
 }
 
 .title {
