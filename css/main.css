@@ -111,6 +111,37 @@ body {
 }
 
 /*components*/
+.modal-header {
+  position: absolute;
+  background-color: #ffff;
+}
+
+.mob-form {
+  width: 100vw;
+  height: 100vh;
+  margin: 0 auto;
+}
+
+.close-icon {
+  width: 18px;
+  height: 18px;
+}
+
+.modal-close-mob {
+  width: 40px;
+  height: 40px;
+  background-color: #ffff;
+  border: none;
+}
+
+.modal-close-mob:hover .close-icon {
+  fill: #2196F3;
+}
+
+.modal-header {
+  display: flex;
+}
+
 .title {
   font-weight: 700;
   font-size: 28px;
@@ -372,7 +403,25 @@ body {
 }
 
 /*loyaut*/
-.header-modal-button {
+.dektop-header {
+  display: none;
+}
+
+.men {
+  display: none;
+}
+
+.mob-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.mob-header .icon-modal-button {
+  width: 24px;
+  height: 16px;
+}
+
+.mob-header .header-modal-button {
   width: 40px;
   height: 40px;
   padding-top: 12px;
@@ -384,18 +433,32 @@ body {
   border: none;
 }
 
-.header-modal-button:hover .icon-modal-button {
+.mob-header .header-modal-button:hover .icon-modal-button {
   fill: #2196F3;
 }
 
-.mob-header {
-  display: flex;
-  justify-content: space-between;
+.mob-header .nav-link {
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
 
-.icon-modal-button {
-  width: 24px;
-  height: 16px;
+@media screen and (min-width: 768px) {
+  .header-modal-button {
+    display: none;
+  }
+  .nav-link {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+  .modal-header {
+    display: none;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+  }
+  .dektop-header {
+    display: flex;
+  }
 }
 
 .li {
@@ -423,11 +486,6 @@ body {
 
 .header {
   border-bottom: 1px solid #ececec;
-}
-
-.nav-link {
-  padding-top: 32px;
-  padding-bottom: 32px;
 }
 
 .header-links {
@@ -522,8 +580,9 @@ body {
 }
 
 .contact-details .footer-conteiner {
-  align-items: baseline;
+  align-items: center;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .contact-details .footer-dive {
@@ -604,6 +663,11 @@ body {
   fill: #ffffff;
 }
 
+.footer-dive-form {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .footer-dive-form .subscription {
   margin-bottom: 20px;
   font-weight: 700;
@@ -648,6 +712,12 @@ body {
   background: #2F303A;
   color: #ffffff;
   margin-right: 12px;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-conteiner {
+    align-items: baseline;
+  }
 }
 
 .title-section {
@@ -887,6 +957,7 @@ body {
 
 .clients {
   margin-top: 50px;
+  flex-wrap: wrap;
 }
 
 .client-link {
@@ -898,7 +969,7 @@ body {
 .clients-list {
   border: 1px solid #afb1b8;
   align-items: center;
-  width: 170px;
+  width: 210px;
   height: 92px;
   transition: border-color 250ms linear;
 }
@@ -909,6 +980,18 @@ body {
 
 .clients-list:hover .clients-icon {
   fill: #2196f3;
+}
+
+@media screen and (min-width: 768px) {
+  .clients-list {
+    width: 226px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .clients-list {
+    width: 170px;
+  }
 }
 
 .clients-list:not(:last-child) {

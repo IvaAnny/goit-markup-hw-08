@@ -1,28 +1,55 @@
 
-.header-modal-button{
-  width: 40px;
-  height: 40px;
-  padding-top: 12px;
-  padding-right: 8px;
-  padding-bottom: 12px;
-  padding-left: 8px;
- background-color: #FFFFFF;
- transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
- border: none;
- &:hover .icon-modal-button{
-  fill: #2196F3;
- }
+.dektop-header{
+  display: none;
 }
+.men{display: none;
+
+}
+
 .mob-header{
   display: flex;
   justify-content: space-between;
+  .icon-modal-button{
+    width: 24px;
+    height: 16px;
+    
+  }
+  .header-modal-button{
+    width: 40px;
+    height: 40px;
+    padding-top: 12px;
+    padding-right: 8px;
+    padding-bottom: 12px;
+    padding-left: 8px;
+   background-color: #FFFFFF;
+   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+   border: none;
+   &:hover .icon-modal-button{
+    fill: #2196F3;
+   }
+  }
+  .nav-link {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+}
+@media screen and (min-width: 768px){
+  .header-modal-button{display: none;}
+  .nav-link {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+  .modal-header{display: none;
+    top: 0;
+    width: 100vw;
+height: 100vh;
+  }
+  .dektop-header{
+    display: flex;
+  }
 }
 
-.icon-modal-button{
-  width: 24px;
-  height: 16px;
-  
-}
+
 .li{position: relative;
 }
 .li::before{
@@ -48,10 +75,7 @@ bottom: 0;
   
   border-bottom: 1px solid #ececec;
 }
-.nav-link {
-  padding-top: 32px;
-  padding-bottom: 32px;
-}
+
 .header-links {
   padding-top: 10px;
   padding-bottom: 10px;

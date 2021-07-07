@@ -5,8 +5,9 @@
     background: var(--title-sektion-color);
 
     .footer-conteiner {
-      align-items: baseline;
+      align-items: center;
       display: flex;
+      flex-wrap: wrap;
     }
     .footer-dive {
       margin-right: 70px;
@@ -87,6 +88,8 @@
   
   
   .footer-dive-form{
+    display: flex;
+    flex-wrap: wrap;
     .subscription{
       margin-bottom: 20px;
       font-weight: 700;
@@ -128,5 +131,12 @@
     background: #2F303A;
     color: #ffffff;
     margin-right: 12px;
+    }
+  }
+
+  @media screen and (min-width: 1200px){
+    
+    .footer-conteiner{
+   align-items: baseline;
     }
   }

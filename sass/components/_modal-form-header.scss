@@ -1,0 +1,27 @@
+.modal-header{
+    position: absolute;
+    background-color: #ffff;
+}
+.mob-form{
+    width: 100vw;
+height: 100vh;
+margin: 0 auto;
+}
+
+.close-icon{
+    width: 18px;
+    height: 18px;
+
+}
+.modal-close-mob{
+    width: 40px;
+    height: 40px;
+    background-color: #ffff;
+    border: none;
+}
+.modal-close-mob:hover .close-icon{
+    fill: #2196F3;
+}
+.modal-header{
+    display: flex;
+}
