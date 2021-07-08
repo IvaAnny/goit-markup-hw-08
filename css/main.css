@@ -41,20 +41,20 @@
 
 @media screen and (min-width: 480px) {
   .conteiner {
-    max-width: 480px;
+    width: 480px;
     margin: 0 auto;
   }
 }
 
 @media screen and (min-width: 768px) {
   .conteiner {
-    max-width: 768px;
+    width: 768px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .conteiner {
-    max-width: 1200px;
+    width: 1200px;
   }
 }
 
@@ -280,6 +280,13 @@ body {
   background: rgba(0, 0, 0, 0.2);
   z-index: 100;
   transition-duration: 500ms;
+}
+
+@media screen and (max-width: 480px) {
+  .modal {
+    width: 450px;
+    height: 609px;
+  }
 }
 
 .modal {
