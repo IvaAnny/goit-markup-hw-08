@@ -170,9 +170,9 @@ body {
 }
 
 .mob-menu-contacts-div {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
 }
 
 .mob-menu-contacts-div .mob-menu-contacts {
