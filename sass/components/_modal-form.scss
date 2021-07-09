@@ -40,7 +40,7 @@ height: 609px; }
   &:hover{box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);}
  
   &:hover .modal-close-button{
-    fill: #2196F3;
+    fill: var(--logo-color);
   }
 }
   
@@ -67,7 +67,7 @@ height: 609px; }
     font-size: 12px;
     line-height: 1.16;
     letter-spacing: 0.01em;
-    color: #757575;
+    color: var(--main-color);
   }
   
   .user-coment{
@@ -107,7 +107,7 @@ height: 609px; }
   padding-left: 42px;
   }
    .modal-lab:hover .modal-svg{
-     fill: #2196F3;
+     fill: var(--logo-color);
    }
   .modal-svg-div{
     display: block;
@@ -123,11 +123,11 @@ height: 609px; }
   
   .user-data:hover,
   .user-data:focus{
-    border: 1px solid #2196F3;
+    border: 1px solid var(--logo-color);
   }
   
   .user-coment:hover,
-  .user-coment:focus{border: 1px solid #2196F3;}
+  .user-coment:focus{border: 1px solid var(--logo-color);}
   
   .policy::before{
     display: inline-block;
@@ -144,7 +144,7 @@ height: 609px; }
     line-height: 1.7;
     letter-spacing: 0.03em;
     text-decoration-line: underline;
-    color: #2196F3;
+    color: var(--logo-color);
   }
   .check-box:checked + .policy::before{
    background-image: url(../images/iconcheck.svg);
@@ -165,7 +165,7 @@ height: 609px; }
   display: block;
   margin: 0 auto;
   margin-top: 30px;
-  background: #2196F3;
+  background: var(--logo-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border: none;

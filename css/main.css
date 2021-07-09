@@ -8,6 +8,7 @@
   --logo-font: Raleway, sans-serif;
   --conact-color: rgba(255, 255, 255, 0.6);
   --button: #188ce8;
+  --main-color:#757575;
 }
 
 .visually-hidden {
@@ -112,13 +113,13 @@ body {
 
 /*components*/
 .modal-header {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
   height: 100vh;
   max-width: 767px;
-  background-color: #ffff;
+  background-color: var(--adress-color);
   z-index: 1000;
   transform: translateX(100%);
   transition: 250ms ease-in-out;
@@ -139,12 +140,12 @@ body {
 .modal-close-mob {
   width: 40px;
   height: 40px;
-  background-color: #ffff;
+  background-color: var(--adress-color);
   border: none;
 }
 
 .modal-close-mob:hover .close-icon {
-  fill: #2196F3;
+  fill: var(--logo-color);
 }
 
 .button-min-div {
@@ -165,7 +166,7 @@ body {
 }
 
 .mob-menu-nav .mob-menu-nav-li:hover {
-  color: #2196F3;
+  color: var(--logo-color);
 }
 
 .mob-menu-contacts-div {
@@ -179,7 +180,7 @@ body {
   font-size: 24px;
   line-height: 28px;
   letter-spacing: 0.02em;
-  color: #757575;
+  color: var(--main-color);
   margin-bottom: 64px;
 }
 
@@ -188,7 +189,7 @@ body {
   font-size: 34px;
   line-height: 1.17;
   letter-spacing: 0.02em;
-  color: #2196F3;
+  color: var(--logo-color);
   margin-bottom: 34px;
 }
 
@@ -198,7 +199,7 @@ body {
   font-size: 18px;
   line-height: 1.22;
   letter-spacing: 0.02em;
-  color: #2196F3;
+  color: var(--logo-color);
 }
 
 .mob-menu-links .mob-links {
@@ -318,7 +319,7 @@ body {
 }
 
 .modal-close:hover .modal-close-button {
-  fill: #2196F3;
+  fill: var(--logo-color);
 }
 
 .is-hidden {
@@ -344,7 +345,7 @@ body {
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.01em;
-  color: #757575;
+  color: var(--main-color);
 }
 
 .user-coment {
@@ -391,7 +392,7 @@ body {
 }
 
 .modal-lab:hover .modal-svg {
-  fill: #2196F3;
+  fill: var(--logo-color);
 }
 
 .modal-svg-div {
@@ -409,12 +410,12 @@ body {
 
 .user-data:hover,
 .user-data:focus {
-  border: 1px solid #2196F3;
+  border: 1px solid var(--logo-color);
 }
 
 .user-coment:hover,
 .user-coment:focus {
-  border: 1px solid #2196F3;
+  border: 1px solid var(--logo-color);
 }
 
 .policy::before {
@@ -433,7 +434,7 @@ body {
   line-height: 1.7;
   letter-spacing: 0.03em;
   text-decoration-line: underline;
-  color: #2196F3;
+  color: var(--logo-color);
 }
 
 .check-box:checked + .policy::before {
@@ -456,7 +457,7 @@ body {
   display: block;
   margin: 0 auto;
   margin-top: 30px;
-  background: #2196F3;
+  background: var(--logo-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border: none;
