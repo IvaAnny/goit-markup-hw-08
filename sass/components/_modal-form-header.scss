@@ -7,7 +7,7 @@
     max-width: 767px;
     background-color: var(--adress-color);
     z-index: 1000;
-    transform: translateX(100%);
+    transform: translateX(150%);
     transition: 250ms ease-in-out;
     display: flex;
     flex-direction: column;
@@ -86,4 +86,9 @@ letter-spacing: 0.02em;
 color: var(--logo-color);
     .mob-links{margin-right: 20px;}
     
+}
+
+.navigation{
+    display: flex;
+    justify-content: space-between;
 }
