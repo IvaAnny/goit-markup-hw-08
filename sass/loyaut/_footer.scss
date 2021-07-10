@@ -89,6 +89,8 @@
   
   .footer-dive-form{
     display: flex;
+    justify-content: flex-end;
+    
     flex-wrap: wrap;
     .subscription{
       margin-bottom: 20px;

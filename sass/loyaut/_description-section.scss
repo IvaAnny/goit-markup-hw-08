@@ -35,6 +35,10 @@
   margin-bottom: 30px;
 }
 
+
+.categories {
+  text-align: center;}
+
 .item-list-g:not(:last-child){
   
   margin-bottom: 30px;
@@ -57,6 +61,8 @@
     
   }
   .item-list-g {flex-basis: calc((100% - 60px) / 2);}
+  .categories {
+    text-align: left;}
 
 }
 
@@ -72,9 +78,8 @@
 }
 }
 
-.categories {
-text-align: center;
-}
+
+
 
 .description {
   margin-right: -30px;
