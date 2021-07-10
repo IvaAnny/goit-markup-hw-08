@@ -483,10 +483,6 @@ body {
   display: none;
 }
 
-.men {
-  display: none;
-}
-
 .mob-header {
   display: flex;
   justify-content: space-between;
@@ -537,7 +533,7 @@ body {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .header-div-list {
     min-height: 80px;
   }
@@ -967,8 +963,15 @@ body {
 }
 
 .portfolio-section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .portfolio-section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .footer-lin {
@@ -977,7 +980,8 @@ body {
 }
 
 .nav-button-description {
-  margin-bottom: 50px;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
   display: flex;
   justify-content: center;
 }
@@ -992,6 +996,7 @@ body {
 }
 
 .nav-button {
+  margin-bottom: 15px;
   padding-left: 22px;
   padding-right: 22px;
   min-height: 38px;
@@ -1030,9 +1035,23 @@ body {
 }
 
 .description-portfolio-link {
-  width: 370px;
   margin-top: 30px;
   margin-right: 30px;
+}
+
+@media screen and (min-width: 780px) {
+  .description-portfolio-link {
+    flex-basis: calc(100% / 2 - 30px);
+    margin: 15px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .description-portfolio-link {
+    flex-basis: calc(100% / 3 - 30px);
+    margin-left: 30px;
+    margin-top: 30px;
+  }
 }
 
 .img-pr {
@@ -1042,8 +1061,6 @@ body {
 .description-portfolio {
   display: flex;
   flex-wrap: wrap;
-  margin-right: -30px;
-  margin-top: -30px;
 }
 
 .img-wraper {

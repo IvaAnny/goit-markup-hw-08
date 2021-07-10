@@ -2,9 +2,9 @@
 .dektop-header{
   display: none;
 }
-.men{display: none;
 
-}
+
+
 
 .mob-header{
   display: flex;
@@ -49,8 +49,9 @@ height: 100vh;
   }
 }
 
-@media screen and (min-width: 768px){
-  .header-div-list{min-height: 80px;}}
+@media screen and (min-width: 1200px){
+  .header-div-list{min-height: 80px;}
+}
 
 
 
