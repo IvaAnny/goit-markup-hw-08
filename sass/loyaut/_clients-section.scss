@@ -26,8 +26,7 @@
     border: 1px solid #afb1b8;
     @extend %flex-list;
     align-items: center;
-    width: 210px;
-    height: 92px;
+    
     transition: border-color 250ms linear  ;
 
     &:hover {
@@ -37,16 +36,17 @@
       fill: #2196f3;
     }
   }
-  @media screen and (min-width: 768px){
-    .clients-list{
-      width: 226px;
-    }
-  }
-  @media screen and (min-width: 1200px){
-    .clients-list{
-      width: 170px;
-    }
-  }
-  .clients-list:not(:last-child) {
+  
+
+  .clients-list{
+    width: 100%;
     margin-right: 30px;
+    margin-bottom: 30px;
+    flex-basis: calc((100% - 60px) / 2);
+    @media screen and (min-width: 768px) {
+      flex-basis: calc((100% - 90px) / 3);
+    }
+    @media screen and (min-width: 1200px) {
+      flex-basis: calc((100% - 180px) / 6);
+    }
   }
