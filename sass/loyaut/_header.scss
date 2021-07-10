@@ -49,6 +49,10 @@ height: 100vh;
   }
 }
 
+@media screen and (min-width: 768px){
+  .header-div-list{min-height: 80px;}}
+
+
 
 .li{position: relative;
 }
@@ -93,7 +97,10 @@ bottom: 0;
 .menu-li .menu-item:not(:last-child) {
   margin-right: 50px;
 }
-
+.header-div-list{
+  display: flex;
+  flex-wrap: nowrap;
+}
 .conteiner .menu-list {
   display: flex;
 }
