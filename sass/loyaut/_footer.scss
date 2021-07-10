@@ -160,13 +160,22 @@
         text-align: center;}
   }
 
+  @media screen and (min-width: 780px){
+    .footer-conteiner{
+      flex-direction: row;
+      justify-content:space-around;
+    }
+  }
+
   @media screen and (min-width: 1200px){
-    .footer-fom{
+    .footer-fom{flex-direction: row;
+      flex-wrap: nowrap;
       margin-left: 93px;
      }
     .footer-conteiner{
       justify-content: space-between;
    align-items: baseline;
+   text-align: left;
     }
     .footer-label{
       align-items: center;
@@ -174,4 +183,6 @@
     .footer-dive {
       margin-right: 70px;
     }
+    .footer-dive-form{
+      flex-direction: row;}
   }
